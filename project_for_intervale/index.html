@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project for Intervale</title>
+    <link rel="icon" type="image/x-icon" href="http://www.intervale.ru/wp-content/themes/iv/images/favicon/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checked.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center">
+        <form action="" method="GET">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="textTop mb-2 mt-2">Данные отправителя</div>
+                    <div class="cardform">
+                        <div class="d-flex p-2 pt-2">
+                            <div id="imgkart" class="img ml-auto"></div>
+                        </div>
+                        <div class="d-flex pl-4">
+                            <label for="">
+                                <div class="textCard">Номер карты</div>
+                                <input name="cardcode" maxlength="16" id="numkart" class="fontInpCart" type="number">
+                            </label>
+                        </div>
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="pl-4">
+                                <div class="textCard">Срок действия</div>
+                                <input class="dateCard" placeholder="MM" maxlength="2" type="text">
+                                <span>/</span>
+                                <input class="dateCard" placeholder="ГГ" maxlength="4" type="text">
+                            </div>
+                            <div class="pr-5 mb-5">
+                                <div class="textCard">CVV/CWC
+                                    <i class="fa fa-question-circle-o fa-2x faIcon" aria-hidden="true"></i>
+                                </div>
+                                <input type="password" class="cvvCard mr-4" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="textTop mb-2 mt-2">Данные получателя</div>
+                    <div class="cardform">
+                        <div class="d-flex p-2 pt-2">
+                            <div class="img ml-auto"></div>
+                        </div>
+                        <div class="d-flex pl-4">
+                            <label for="">
+                                <div class="textCard">Номер карты</div>
+                                <input name="cardcode" maxlength="16" class="fontInpCart" type="number">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex flex-column">
+                        <div class="mt-2">
+                            <label class="control control-checkbox">
+                                <input type="checkbox" checked />
+                                <div class="control_indicator"></div>
+                            </label>
+                            <span class="textCheck ml-3">Отправить чек на e-mail</span>
+                        </div>
+                        <div class="borderInp">
+                            <input type="email" placeholder="Ваш e-mail" class="inpText">
+                        </div>
+                        <div class="mt-2">
+                            <span class="textCheck">Сумма перевода</span>
+                            <div class="borderInp">
+                                <input type="number" class="inpText">
+                                <span class="span"></span>
+                            </div>
+                        </div>
+                        <div class="mt-2">
+                            <span class="textCheck">Итоговая сумма</span>
+                            <div class="borderInp">
+                                <input type="number" class="inpText">
+                                <span class="span"></span>
+                            </div>
+                        </div>
+                        <input type="submit" id="btn" class="btn mt-3 p-2" value="Перевести">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mt-2">
+                        <label class="control control-checkbox">
+                            <input type="checkbox" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <span class="textCheck ml4">Добавить сообщение получателю</span>
+                        <i class="fa fa-question-circle-o qs-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="js/formCard.js"></script>
+</body>
+
+</html>
